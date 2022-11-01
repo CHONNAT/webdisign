@@ -1,0 +1,42 @@
+/*responsive code*/
+/*laptop*/
+@media (min-width: 1200px) {
+    
+}
+/*ipad pro*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .login :is(.btn){
+        height: 4vh;
+        width: 8vw;
+    }
+    .con-content :is(button){
+        height: 4vh;
+    }
+}
+/*ipad*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .login :is(.btn){
+        height: 5vh;
+        width: 10vw;
+    }
+    .in-header :is(ul, ul li, ul li a, .btn){
+        font-size: 1.2rem;
+    }
+    .con-content :is(button){
+        height: 5vh;
+        width: 10.5vw;
+    }
+} 
+/*mobile phone*/
+@media (max-width: 767px) {
+    .main-header{
+        display: none;
+    }
+    .con-menuphone{
+        display: block;
+    }
+}
+
+
+ 
+
