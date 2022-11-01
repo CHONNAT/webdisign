@@ -1,0 +1,133 @@
+/*responsive code*/
+/*laptop*/
+@media (min-width: 1200px) {
+    
+}
+/*ipad pro*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .login :is(.btn){
+        height: 4vh;
+        width: 8vw;
+    }
+    .con-content :is(button){
+        height: 4vh;
+    }
+}
+/*ipad*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .login :is(.btn){
+        height: 5vh;
+        width: 10vw;
+    }
+    .in-header :is(ul, ul li, ul li a, .btn){
+        font-size: 1.2rem;
+    }
+    .con-content :is(button){
+        height: 5vh;
+        width: 10.5vw;
+    }
+} 
+/*mobile phone*/
+@media (max-width: 767px) {
+    .main-header{
+        display: none;
+    }
+    .main-header-respove{
+        display: block;
+        top: 5px;
+        position: relative;
+        z-index: -1;
+        /* background-color: pink; */
+        padding: 0px;
+    }
+    /* .hamberker{
+        width: 10%;
+        background-color: wheat;
+        
+    }
+    .login-respove{
+        width: 10%;
+        background-color: aqua;
+    } */
+    .in-header-respove :is(.hamberker, .login-respove){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 5vh;
+        /* background-color: aqua; */
+    }
+    .in-header-respove :is(.hamberker :is(.btn-respove), .login-respove :is(.btn-respove)){
+        height: 4.5vh;
+        width: 12.5vw;
+        background-color: rgb(4, 143, 202);
+        border: none;
+        border-radius: 10px;
+    }
+    .in-header-respove :is(.hamberker :is(.btn-respove), .login-respove :is(.btn-respove)):hover{
+        background-color: rgb(23, 63, 98);
+    }
+    /* .in-header-respove :is(.logo-respove, .logo-respove :is(ul), .login-respove){
+        display: flex;
+        align-items: center;
+    } */
+    .in-header-respove{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .in-header-respove :is(ul, ul li, ul li a, .btn-respove){
+        font-size: 1.2rem;
+        list-style: none;
+        color: rgb(251, 251, 251);
+        text-decoration: none;
+        font-family: cursive;
+    }
+    .logo-respove{
+        width: 80%;
+        /* background-color: red; */
+    }
+    /* .menu-respove{
+        display: none;
+    } */
+    .logo-respove ul{
+        display: flex;
+        /* align-items: center; */
+        justify-content: flex-start;
+        /* background-color: grey; */
+        margin: 0;
+    }
+
+    .con-content button{
+        width: 20%;
+        border-radius: 20px;
+        background-color: aquamarine;
+    }
+
+    .menu-respove{
+        width: 100%;
+        height: 280px;
+        background-color: grey;
+        top: 0;
+        border-radius: 10px;
+        display: none;
+    }
+    .menu-respove ul{
+        display: block;
+    }
+
+    .menu-respove ul li{
+        height: 30px;
+        list-style: none;
+        padding: 30px 0;
+        margin: 5px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid white;
+    }
+}
+
+
+ 
+
