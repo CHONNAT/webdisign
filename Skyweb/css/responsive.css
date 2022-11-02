@@ -27,6 +27,7 @@
         width: 10.5vw;
     }
 } 
+
 /*mobile phone*/
 @media (max-width: 767px) {
     .main-header{
@@ -38,17 +39,9 @@
         position: relative;
         z-index: -1;
         /* background-color: pink; */
-        padding: 0px;
+        padding: 0;
+        margin: 0;
     }
-    /* .hamberker{
-        width: 10%;
-        background-color: wheat;
-        
-    }
-    .login-respove{
-        width: 10%;
-        background-color: aqua;
-    } */
     .in-header-respove :is(.hamberker, .login-respove){
         display: flex;
         justify-content: center;
@@ -67,16 +60,13 @@
     .in-header-respove :is(.hamberker :is(.btn-respove), .login-respove :is(.btn-respove)):hover{
         background-color: rgb(23, 63, 98);
     }
-    /* .in-header-respove :is(.logo-respove, .logo-respove :is(ul), .login-respove){
-        display: flex;
-        align-items: center;
-    } */
     .in-header-respove{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 5px;
     }
-    .in-header-respove :is(ul, ul li, ul li a, .btn-respove){
+    .main-header-respove :is(.in-header-respove :is(ul, ul li, ul li a, .btn-respove), .menu-respove :is(ul li a)){
         font-size: 1.2rem;
         list-style: none;
         color: rgb(251, 251, 251);
@@ -87,9 +77,6 @@
         width: 80%;
         /* background-color: red; */
     }
-    /* .menu-respove{
-        display: none;
-    } */
     .logo-respove ul{
         display: flex;
         /* align-items: center; */
@@ -103,11 +90,12 @@
         border-radius: 20px;
         background-color: aquamarine;
     }
-
+    
     .menu-respove{
-        width: 100%;
-        height: 280px;
-        background-color: grey;
+        margin: auto;
+        width:95%;
+        height: 225px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
         top: 0;
         border-radius: 10px;
         display: none;
@@ -115,16 +103,20 @@
     .menu-respove ul{
         display: block;
     }
-
     .menu-respove ul li{
-        height: 30px;
+        height: 25px;
         list-style: none;
-        padding: 30px 0;
-        margin: 5px;
+        padding: 25px 10px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         border-bottom: 1px solid white;
+    }
+    .main-header-respove :is(.menu-respove ul li:hover a){
+        color: aqua;
+    }
+    .main-header-respove :is(.menu-respove ul li:hover){
+        border-bottom: 1px solid aqua;
     }
 }
 
